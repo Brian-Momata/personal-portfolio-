@@ -1,0 +1,65 @@
+html, body {
+  margin: 0;
+}
+body {
+  display: grid;
+  grid-template-rows: 500px 1fr 500px;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+main {
+  background-color: blue;
+}
+
+footer {
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-image {
+  height: 400px;
+  width: 350px;
+  border: 1px solid black;
+  margin-left: 50px;
+}
+
+.about-me {
+  margin-right: 50px;
+  height: 60%;
+  width: 70%;
+  border: 1px solid red;
+  overflow: hidden;
+}
+
+.my-work {
+  display: flex;
+  justify-content: center;
+  padding: 100px 30px 30px 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.projects {
+  height: 350px;
+  width: 250px;
+  border: 1px solid white;
+}
+.footer-image {
+  height: 400px;
+  width: 400px;
+  border: 1px solid white;
+  justify-self: right;
+}
+
+.contact-me {
+  width: 40%;
+  height: 70%;
+  border: 1px solid white;
+}
