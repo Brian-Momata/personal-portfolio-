@@ -26,7 +26,6 @@ footer {
 .header-image {
   height: 400px;
   width: 350px;
-  border: 1px solid black;
   margin-left: 50px;
 }
 
@@ -34,8 +33,7 @@ footer {
   margin-right: 50px;
   height: 60%;
   width: 70%;
-  border: 1px solid red;
-  overflow: hidden;
+  padding: 20px;
 }
 
 .my-work {
@@ -54,12 +52,39 @@ footer {
 .footer-image {
   height: 400px;
   width: 400px;
-  border: 1px solid white;
   justify-self: right;
 }
 
 .contact-me {
   width: 40%;
   height: 70%;
-  border: 1px solid white;
+  padding: 20px;
+}
+
+img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+.contact-details {
+  display: flex;
+  flex-direction: column;
+}
+.phone, .email, .social-media {
+  display: flex;
+  gap: 20px;
+}
+.social-media {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: black;
+}
+
+.social-media a:hover {
+  opacity: 0.3;
 }
