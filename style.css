@@ -1,31 +1,125 @@
+@font-face {
+  font-family: 'rubikblack';
+  src: url('./fonts/rubik-black-webfont.woff2') format('woff2'),
+       url('./fonts/rubik-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'rubikblack_italic';
+  src: url('./fonts/rubik-blackitalic-webfont.woff2') format('woff2'),
+       url('./fonts/rubik-blackitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'rubikbold';
+  src: url('./fonts/rubik-bold-webfont.woff2') format('woff2'),
+       url('./fonts/rubik-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'rubikbold_italic';
+  src: url('./fonts/rubik-bolditalic-webfont.woff2') format('woff2'),
+       url('./fonts/rubik-bolditalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'rubikitalic';
+  src: url('./fonts/rubik-italic-webfont.woff2') format('woff2'),
+       url('./fonts/rubik-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'rubiklight';
+  src: url('./fonts/rubik-light-webfont.woff2') format('woff2'),
+       url('./fonts/rubik-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'rubiklight_italic';
+  src: url('./fonts/rubik-lightitalic-webfont.woff2') format('woff2'),
+       url('./fonts/rubik-lightitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'rubikmedium';
+  src: url('./fonts/rubik-medium-webfont.woff2') format('woff2'),
+       url('./fonts/rubik-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'rubikmedium_italic';
+  src: url('./fonts/rubik-mediumitalic-webfont.woff2') format('woff2'),
+       url('./fonts/rubik-mediumitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'rubikregular';
+  src: url('./fonts/rubik-regular-webfont.woff2') format('woff2'),
+       url('./fonts/rubik-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 html, body {
   margin: 0;
+  font-family: 'rubikregular';
 }
 body {
   display: grid;
-  grid-template-rows: 500px 1fr 500px;
+  grid-template-rows: 700px 1fr 500px;
 }
 
 header {
-  background-color: white;
+  background-color: #028C6A;
+  color: white;
   display: flex;
   align-items: center;
 }
 
 main {
-  background-color: blue;
+  background-color: #7BC5AE;
+  color: white;
 }
 
 footer {
-  background-color: orange;
+  background-color: #028C6A;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .header-image {
-  height: 400px;
-  width: 350px;
+  height: 650px;
+  width: 450px;
   margin-left: 50px;
 }
 
@@ -34,6 +128,7 @@ footer {
   height: 60%;
   width: 70%;
   padding: 20px;
+  font-size: 1.2rem;
 }
 
 .my-work {
@@ -47,7 +142,7 @@ footer {
 .projects {
   height: 350px;
   width: 250px;
-  border: 1px solid white;
+  box-shadow: 5px 4px 11px -5px rgba(0,0,0,0.75);
   display: flex;
   flex-direction: column;
 }
@@ -61,9 +156,16 @@ footer {
   width: 40%;
   height: 70%;
   padding: 20px;
+  font-size: 1.1rem;
 }
 
-.header-image > img, .footer-image > img {
+.header-image > img {
+  height: 650px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer-image > img {
   height: 400px;
   width: 100%;
   object-fit: cover;
@@ -84,11 +186,11 @@ footer {
 
 .social-media a, .description a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
-.social-media a:hover {
-  opacity: 0.3;
+a i:hover {
+  opacity: 0.5;
 }
 
 .projects > .pic {
