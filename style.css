@@ -92,9 +92,53 @@ html, body {
   margin: 0;
   font-family: 'rubikregular';
 }
+
+@media (max-width: 500px){
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+
+  .header-image {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  .header-image > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .about-me {
+    width: 100%;
+    margin: 0;
+  }
+
+  main {
+    flex-grow: 1;
+  }
+
+  .description {
+    padding: 10px; 
+  }
+
+  .my-work {
+    gap: 30px;
+    padding: 50px 20px;
+  }
+}
 body {
   display: grid;
-  grid-template-rows: 700px 1fr 500px;
 }
 
 header {
@@ -115,6 +159,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 500px;
 }
 
 .header-image {
@@ -131,16 +176,21 @@ footer {
   font-size: 1.2rem;
 }
 
+main h2 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.5rem;
+}
 .my-work {
   display: flex;
   justify-content: center;
-  padding: 100px 30px 30px 30px;
+  padding: 30px;
   flex-wrap: wrap;
   gap: 20px;
 }
 
 .projects {
-  height: 350px;
+  height: 400px;
   width: 250px;
   box-shadow: 5px 4px 11px -5px rgba(0,0,0,0.75);
   display: flex;
@@ -199,12 +249,8 @@ a i:hover {
   height: 250px;
 }
 
-.projects > .description {
-  height: 100px;
-}
-
 .description {
-  padding: 0 10px 0 10px;
+  padding: 20px;
 }
 
 .description > .title {
@@ -215,7 +261,6 @@ a i:hover {
 
 .description > p {
   font-size: 0.9rem;
-  margin-top: -10px;
 }
 
 .pic > img {
